@@ -1,0 +1,71 @@
+name: Import a mod from SuperPass
+
+# The one-off move to GitHub: takes a mod's current files from onestreampass.com, checked against the SHA-256s SuperPass
+# lists for them, and releases them here exactly like a publish (tag, release, mods.json). Only works while SuperPass
+# still has the files itself; once a mod is on GitHub it refuses ("already moved").
+# (From game-kit deploy/downloads - change it there.)
+on:
+  workflow_dispatch:
+    inputs:
+      mod:
+        description: 'The mod: haystack or coins'
+        type: string
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MOD: ${{ inputs.mod }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          path: main
+
+      - name: Take the files SuperPass serves now
+        run: |
+          [[ "$MOD" =~ ^[a-z0-9-]{1,40}$ ]] || { echo "::error::\"$MOD\" isn't a mod name"; exit 1; }
+          files="$RUNNER_TEMP/files"; mkdir -p "$files"; cd "$files"
+          curl -fsS --retry 3 "https://onestreampass.com/api/mods/$MOD/latest" -o "$MOD.json"
+          cat "$MOD.json"; echo
+          for field in dll setup; do
+            p=$(jq -r --arg f "$field" '.[$f] // empty' "$MOD.json")
+            [ -n "$p" ] || continue
+            case "$p" in
+              /downloads/*) curl -fsS --retry 3 "https://onestreampass.com$p" -o "$(basename "$p")" ;;
+              *) echo "::error::$MOD's $field is already somewhere else ($p) - already moved, nothing to import"; exit 1 ;;
+            esac
+          done
+          ls -l
+          echo "VERSION=$(jq -r .version "$MOD.json")" >> "$GITHUB_ENV"
+
+      - name: Tag it the way a publish does
+        run: |
+          tag="$MOD-v$VERSION"
+          echo "TAG=$tag" >> "$GITHUB_ENV"
+          cd main
+          if git ls-remote --exit-code --tags origin "refs/tags/$tag" > /dev/null; then
+            echo "::error::$tag is already here - nothing to import"; exit 1
+          fi
+          git switch -q --detach
+          mkdir release && cp "$RUNNER_TEMP"/files/* release/
+          git add release
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "$MOD $VERSION (moved from SuperPass)"
+          git tag "$tag"
+          git push -q origin "refs/tags/$tag"
+          git switch -q main
+
+      - name: Release it
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node main/.github/release.js "$TAG" "$RUNNER_TEMP/files" main

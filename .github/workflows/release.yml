@@ -1,0 +1,35 @@
+name: Release
+
+# A mod or tool publishes a version by pushing the tag "<name>-v<version>" (haystack-v2.2.6). The tag's commit is main
+# plus a release/ folder: the files and <name>.json (version, the files, their SHA-256s). This checks every file, makes
+# the GitHub release with them, then records it in mods.json on main - SuperPass reads that for its download pages and
+# for the mods' auto-update. Only repos with a deploy key here (game-kit's phone button "downloads") can push tags.
+# (From game-kit deploy/downloads - change it there.)
+on:
+  push:
+    tags: ['*-v*']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: tag
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          path: main
+      - name: Release ${{ github.ref_name }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: node main/.github/release.js "$TAG" tag/release main
