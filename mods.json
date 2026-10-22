@@ -18,5 +18,17 @@
     "setupBytes": 848896,
     "published": "2026-10-19T20:32:42Z",
     "tag": "haystack-v2.2.5"
+  },
+  "supertok": {
+    "version": "1.2.6",
+    "title": "SuperTok",
+    "setup": "https://github.com/solulous/downloads/releases/download/supertok-v1.2.6/SuperTok-Setup.exe",
+    "setupSha256": "87e10fbcac18a01bb34bc2e39d9d78f0e264edfff3645e3e21c267f69d1ed1ae",
+    "setupBytes": 2517003,
+    "exe": "https://github.com/solulous/downloads/releases/download/supertok-v1.2.6/SuperTok.exe",
+    "exeSha256": "fd08fc46f54c1b2ef8551dda1a2e2c6c83597710b88e839801a27c7148708105",
+    "exeBytes": 6871040,
+    "tag": "supertok-v1.2.6",
+    "published": "2026-10-22T00:30:17.247Z"
   }
 }
