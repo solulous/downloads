@@ -1,1 +1,12 @@
-{}
+{
+  "haystack": {
+    "version": "2.2.5",
+    "dll": "https://github.com/solulous/downloads/releases/download/haystack-v2.2.5/HaystackSuperMod.dll",
+    "sha256": "d5298f118262a99814df146f7a7f9c8941c6dee15c8c66d392fb5db23746a12d",
+    "setup": "https://github.com/solulous/downloads/releases/download/haystack-v2.2.5/HaystackSuperModSetup.exe",
+    "setupSha256": "3d754d093663422fd609db637e058518f65be5adcce4c5749fbca4d2baffe26f",
+    "setupBytes": 848896,
+    "published": "2026-10-19T20:32:42Z",
+    "tag": "haystack-v2.2.5"
+  }
+}
