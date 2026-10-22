@@ -6,6 +6,7 @@ so the site can send you straight to them.
 
 - Haystack Super Mod: https://onestreampass.com/haystack
 - One Million Coins Super Mod: https://onestreampass.com/coins
+- SuperTok (alerts, TTS, gift menu, game control; its PC app is here): http://57.128.169.92:5300
 
 ## How a version gets here
 

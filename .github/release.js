@@ -3,8 +3,9 @@
 //
 //   node .github/release.js <tag> <folder with the files> <checkout of main>
 //
-// <tag> is "<name>-v<version>" (haystack-v2.2.6). The folder holds <name>.json - version, "dll" / "setup" (the file
-// names, or the old "/downloads/<file>" paths), "sha256" / "setupSha256" (and "setupBytes") - and exactly those files.
+// <tag> is "<name>-v<version>" (haystack-v2.2.6). The folder holds <name>.json - version, "dll" / "setup" / "exe" (the
+// file names, or the old "/downloads/<file>" paths), "sha256" / "setupSha256" / "exeSha256" (and "setupBytes" /
+// "exeBytes") - and exactly those files. (exe = an app's portable copy, like SuperTok.exe.)
 // Every file must match its SHA-256 or nothing is released. Safe to run twice: an existing release or a mods.json that
 // already has this version is left as it is, and mods.json never goes back to an older version.
 // (From game-kit deploy/downloads - change it there.)
@@ -14,7 +15,7 @@ const fs = require('fs');
 const path = require('path');
 
 const REPO = process.env.GITHUB_REPOSITORY || 'solulous/downloads';
-const FILES = [['dll', 'sha256', null], ['setup', 'setupSha256', 'setupBytes']];
+const FILES = [['dll', 'sha256', null], ['setup', 'setupSha256', 'setupBytes'], ['exe', 'exeSha256', 'exeBytes']];
 
 function fail(message) {
   console.log(`::error title=Release FAILED::${message}`);
@@ -58,7 +59,7 @@ function buildEntry(tag, dir) {
     entry[field] = `https://github.com/${REPO}/releases/download/${tag}/${file}`;
     assets.push(full);
   }
-  if (!assets.length) fail(`${name}.json names no files ("dll" / "setup").`);
+  if (!assets.length) fail(`${name}.json names no files ("dll" / "setup" / "exe").`);
   const extra = fs.readdirSync(dir).filter((f) => f !== `${name}.json` && !assets.some((a) => path.basename(a) === f));
   if (extra.length) fail(`Files ${name}.json doesn't name: ${extra.join(', ')} - nothing was released.`);
   entry.tag = tag;
