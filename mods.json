@@ -1,4 +1,14 @@
 {
+  "coins": {
+    "version": "1.0.10",
+    "dll": "https://github.com/solulous/downloads/releases/download/coins-v1.0.10/MillionCoinsSuperMod.dll",
+    "sha256": "d2fb6f4170bef3d0c703f0745c96f86420963330cfaa3dd69d6a3ac649a11d1e",
+    "setup": "https://github.com/solulous/downloads/releases/download/coins-v1.0.10/MillionCoinsSuperModSetup.exe",
+    "setupSha256": "ddbf96e9d2cc75c78492cde6b273824847c12314a34fd036c8517fdfc335b59f",
+    "setupBytes": 916992,
+    "published": "2026-10-21T22:11:57Z",
+    "tag": "coins-v1.0.10"
+  },
   "haystack": {
     "version": "2.2.5",
     "dll": "https://github.com/solulous/downloads/releases/download/haystack-v2.2.5/HaystackSuperMod.dll",
