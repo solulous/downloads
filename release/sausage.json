@@ -1,0 +1,10 @@
+{
+  "version": "1.0.1",
+  "dll": "SausageSuperMod.dll",
+  "sha256": "158d1e9ce548be492b015d2127e18d53ee7155dabe66e578ad5109ac09284736",
+  "setup": "SausageSuperModSetup.exe",
+  "setupSha256": "fe809b183f4a4b859616890c0ec21093f0ebc1bce1418e1b60c381927479457d",
+  "setupBytes": 1147904,
+  "published": "2026-10-23T01:44:09Z",
+  "title": "Sausage Super Mod"
+}
