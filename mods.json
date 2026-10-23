@@ -21,15 +21,15 @@
     "tag": "haystack-v2.2.5"
   },
   "sausage": {
-    "version": "1.0.2",
-    "dll": "https://github.com/solulous/downloads/releases/download/sausage-v1.0.2/SausageSuperMod.dll",
-    "sha256": "9add30d5699109c8387e6b34141c4a5ca2131ebb45f4ac1d06cb19ea73f2e7e1",
-    "setup": "https://github.com/solulous/downloads/releases/download/sausage-v1.0.2/SausageSuperModSetup.exe",
-    "setupSha256": "f51a980687bf93231441cee63c5037d9489349a0a03a9b65cc197e18cfde8fb6",
-    "setupBytes": 1151488,
-    "published": "2026-10-23T02:10:36Z",
+    "version": "1.0.3",
+    "dll": "https://github.com/solulous/downloads/releases/download/sausage-v1.0.3/SausageSuperMod.dll",
+    "sha256": "3984225120469e99768d0147e696dae5a66c124da2debbc89a6ec5b0bb3860d4",
+    "setup": "https://github.com/solulous/downloads/releases/download/sausage-v1.0.3/SausageSuperModSetup.exe",
+    "setupSha256": "a1a9557e562bcb808a8b23085fd9b65a55ff2e47e37b5ff78e883c98c1cc4e2c",
+    "setupBytes": 1154560,
+    "published": "2026-10-23T02:45:57Z",
     "title": "Sausage Super Mod",
-    "tag": "sausage-v1.0.2"
+    "tag": "sausage-v1.0.3"
   },
   "supertok": {
     "version": "1.2.6",
