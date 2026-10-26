@@ -21,15 +21,15 @@
     "tag": "haystack-v2.2.5"
   },
   "moon": {
-    "version": "1.0.3",
-    "dll": "https://github.com/solulous/downloads/releases/download/moon-v1.0.3/MoonSweepersSuperMod.dll",
-    "sha256": "62e030e185e743786acc5eb1ded0f7331be2d6dfe2072025647421497ad9a5bf",
-    "setup": "https://github.com/solulous/downloads/releases/download/moon-v1.0.3/MoonSweepersSuperModSetup.exe",
-    "setupSha256": "688675a7f719f04bdac38dc7e341d2e0b5e8875b31abe0362f29744eddb180f3",
-    "setupBytes": 47202304,
+    "version": "1.0.4",
+    "dll": "https://github.com/solulous/downloads/releases/download/moon-v1.0.4/MoonSweepersSuperMod.dll",
+    "sha256": "abaee83443326b6951f910b7e3d618a8832846907b30ea45a10adc87ab9ae2e3",
+    "setup": "https://github.com/solulous/downloads/releases/download/moon-v1.0.4/MoonSweepersSuperModSetup.exe",
+    "setupSha256": "5baad5c947f44edd9c572ecf62f2786ca2d413793cab386a43b7a01ba64088f3",
+    "setupBytes": 47202816,
     "title": "Moon Sweepers Super Mod",
-    "published": "2026-10-26T02:11:04Z",
-    "tag": "moon-v1.0.3"
+    "published": "2026-10-26T04:27:40Z",
+    "tag": "moon-v1.0.4"
   },
   "sausage": {
     "version": "1.0.3",
