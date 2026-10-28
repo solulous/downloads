@@ -1,0 +1,10 @@
+{
+  "version": "1.0.5",
+  "dll": "/downloads/MoonSweepersSuperMod.dll",
+  "sha256": "58ca539f214158f39e1cb043bcfc1c0ef9df04f636bcbc7fc42a5a3c62194cf3",
+  "setup": "/downloads/MoonSweepersSuperModSetup.exe",
+  "setupSha256": "5f7195e971c43bfcbb423adb5b98da63a28faf764464cf625e5c7defa45ab92a",
+  "setupBytes": 47245824,
+  "title": "Moon Sweepers Super Mod",
+  "published": "2026-10-28T20:26:42Z"
+}
