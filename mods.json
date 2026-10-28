@@ -43,15 +43,15 @@
     "tag": "sausage-v1.0.3"
   },
   "supertok": {
-    "version": "1.2.6",
+    "version": "1.2.7",
     "title": "SuperTok",
-    "setup": "https://github.com/solulous/downloads/releases/download/supertok-v1.2.6/SuperTok-Setup.exe",
-    "setupSha256": "87e10fbcac18a01bb34bc2e39d9d78f0e264edfff3645e3e21c267f69d1ed1ae",
-    "setupBytes": 2517003,
-    "exe": "https://github.com/solulous/downloads/releases/download/supertok-v1.2.6/SuperTok.exe",
-    "exeSha256": "fd08fc46f54c1b2ef8551dda1a2e2c6c83597710b88e839801a27c7148708105",
-    "exeBytes": 6871040,
-    "tag": "supertok-v1.2.6",
-    "published": "2026-10-22T00:30:17.247Z"
+    "setup": "https://github.com/solulous/downloads/releases/download/supertok-v1.2.7/SuperTok-Setup.exe",
+    "setupSha256": "5933380e4ed8935601ea05649adff9a7dfaea488261433e31e2f7c5237a9724e",
+    "setupBytes": 2518695,
+    "exe": "https://github.com/solulous/downloads/releases/download/supertok-v1.2.7/SuperTok.exe",
+    "exeSha256": "dd07980704fb56e1588e9e5fe1ab6d2a1a4549aad990dfc8b76dcf18d6f7c2e0",
+    "exeBytes": 6871552,
+    "tag": "supertok-v1.2.7",
+    "published": "2026-10-28T18:16:52.328Z"
   }
 }
