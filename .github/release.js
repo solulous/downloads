@@ -3,9 +3,10 @@
 //
 //   node .github/release.js <tag> <folder with the files> <checkout of main>
 //
-// <tag> is "<name>-v<version>" (haystack-v2.2.6). The folder holds <name>.json - version, "dll" / "setup" / "exe" (the
-// file names, or the old "/downloads/<file>" paths), "sha256" / "setupSha256" / "exeSha256" (and "setupBytes" /
-// "exeBytes") - and exactly those files. (exe = an app's portable copy, like SuperTok.exe.)
+// <tag> is "<name>-v<version>" (haystack-v2.2.6). The folder holds <name>.json - version, "dll" / "setup" / "exe" /
+// "interop" (the file names, or the old "/downloads/<file>" paths), "sha256" / "setupSha256" / "exeSha256" /
+// "interopSha256" (and "setupBytes" / "exeBytes" / "interopBytes") - and exactly those files. (exe = an app's portable
+// copy, like SuperTok.exe; interop = an IL2CPP mod's interop zip, with "gameBuild" saying which game build it's for.)
 // Every file must match its SHA-256 or nothing is released. Safe to run twice: an existing release or a mods.json that
 // already has this version is left as it is, and mods.json never goes back to an older version.
 // (From game-kit deploy/downloads - change it there.)
@@ -15,7 +16,10 @@ const fs = require('fs');
 const path = require('path');
 
 const REPO = process.env.GITHUB_REPOSITORY || 'solulous/downloads';
-const FILES = [['dll', 'sha256', null], ['setup', 'setupSha256', 'setupBytes'], ['exe', 'exeSha256', 'exeBytes']];
+// interop = an IL2CPP mod's ready-made interop as a zip (Moon Sweepers): after a game update the mod downloads the
+// release made for its game build ("gameBuild") with it, so players never need the setup again.
+const FILES = [['dll', 'sha256', null], ['setup', 'setupSha256', 'setupBytes'], ['exe', 'exeSha256', 'exeBytes'],
+  ['interop', 'interopSha256', 'interopBytes']];
 
 function fail(message) {
   console.log(`::error title=Release FAILED::${message}`);
@@ -60,6 +64,7 @@ function buildEntry(tag, dir) {
     assets.push(full);
   }
   if (!assets.length) fail(`${name}.json names no files ("dll" / "setup" / "exe").`);
+  if (info.interop && !/^[0-9a-f]{64}$/.test(String(info.gameBuild || ''))) fail(`${name}.json has an interop zip but no gameBuild (the SHA-256 of the game's global-metadata.dat it's for).`);
   const extra = fs.readdirSync(dir).filter((f) => f !== `${name}.json` && !assets.some((a) => path.basename(a) === f));
   if (extra.length) fail(`Files ${name}.json doesn't name: ${extra.join(', ')} - nothing was released.`);
   entry.tag = tag;
