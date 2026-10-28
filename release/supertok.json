@@ -1,0 +1,10 @@
+{
+  "version": "1.2.8",
+  "title": "SuperTok",
+  "setup": "SuperTok-Setup.exe",
+  "setupSha256": "7daf4bf576bc03c7403e7503e95aad52718415faacb9b304ddbc636dc67ac325",
+  "setupBytes": 2515944,
+  "exe": "SuperTok.exe",
+  "exeSha256": "0e5ec3209a93c0ff001b7fb8faabe8a370a1cc091664609619ec15ee01886090",
+  "exeBytes": 6871552
+}
