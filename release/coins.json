@@ -1,0 +1,10 @@
+{
+  "version": "1.0.18",
+  "dll": "/downloads/MillionCoinsSuperMod.dll",
+  "sha256": "c9892af8ef993b780c61dd86a38b825c2b7d7de8e566c6a936e92cbc75e8b062",
+  "setup": "/downloads/MillionCoinsSuperModSetup.exe",
+  "setupSha256": "70570ec9cf1d5e90678bb5e9fe385b34d538eb300b7f936f8c24b7c7dfe113fb",
+  "setupBytes": 926208,
+  "published": "2026-10-30T00:50:33Z",
+  "title": "One Million Coins Super Mod"
+}
