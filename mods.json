@@ -1,14 +1,14 @@
 {
   "coins": {
-    "version": "1.0.17",
-    "dll": "https://github.com/solulous/downloads/releases/download/coins-v1.0.17/MillionCoinsSuperMod.dll",
-    "sha256": "a6b949b2f9fc2c8f6abd64bee8d7a5448e7f0d1d174b2af10ea23dfbc9633cb2",
-    "setup": "https://github.com/solulous/downloads/releases/download/coins-v1.0.17/MillionCoinsSuperModSetup.exe",
-    "setupSha256": "cd4a69db60ad44c9e5dbc3c68a0c55e5219fbf8f4f4f34a5859b5c4ce6f2fe71",
-    "setupBytes": 925184,
-    "published": "2026-10-25T21:08:32Z",
+    "version": "1.0.18",
+    "dll": "https://github.com/solulous/downloads/releases/download/coins-v1.0.18/MillionCoinsSuperMod.dll",
+    "sha256": "c9892af8ef993b780c61dd86a38b825c2b7d7de8e566c6a936e92cbc75e8b062",
+    "setup": "https://github.com/solulous/downloads/releases/download/coins-v1.0.18/MillionCoinsSuperModSetup.exe",
+    "setupSha256": "70570ec9cf1d5e90678bb5e9fe385b34d538eb300b7f936f8c24b7c7dfe113fb",
+    "setupBytes": 926208,
+    "published": "2026-10-30T00:50:33Z",
     "title": "One Million Coins Super Mod",
-    "tag": "coins-v1.0.17"
+    "tag": "coins-v1.0.18"
   },
   "haystack": {
     "version": "2.2.5",
