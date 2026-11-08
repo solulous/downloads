@@ -1,0 +1,8 @@
+{
+    "version":  "1.0.6",
+    "title":  "Don\u0027t Touch The Water",
+    "setup":  "DontTouchTheWaterSetup.exe",
+    "setupSha256":  "404d28d890772823c4d6229cca927ec901b2c81e0ed56d22b560095c446669be",
+    "setupBytes":  40029184,
+    "published":  "2026-11-08T19:15:44Z"
+}
