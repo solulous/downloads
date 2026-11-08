@@ -50,13 +50,13 @@
     "filesBytes": 791888
   },
   "launcher": {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "title": "SuperPass Launcher",
-    "setup": "https://github.com/solulous/downloads/releases/download/launcher-v1.0.2/SuperPassLauncherSetup.exe",
-    "setupSha256": "d39e4eef0377ab092cfe7af4fc948f92368816bd3bdd9e1056ee5105bc779c5e",
-    "setupBytes": 1396224,
-    "tag": "launcher-v1.0.2",
-    "published": "2026-11-08T15:06:24.508Z"
+    "setup": "https://github.com/solulous/downloads/releases/download/launcher-v1.0.3/SuperPassLauncherSetup.exe",
+    "setupSha256": "6aa4423e04e05449e1d34e1ab032bc0af4104d2ae1f04b92cf56a1091cd392ef",
+    "setupBytes": 1402368,
+    "tag": "launcher-v1.0.3",
+    "published": "2026-11-08T15:45:57.109Z"
   },
   "moon": {
     "version": "1.0.11",
