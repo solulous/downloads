@@ -49,6 +49,15 @@
     "filesSha256": "0aa4529253d75f7bd1231bbc3384c699db11781e50aafe5c9eb8f8ab0804e2fc",
     "filesBytes": 791888
   },
+  "launcher": {
+    "version": "1.0.0",
+    "title": "SuperPass Launcher",
+    "setup": "https://github.com/solulous/downloads/releases/download/launcher-v1.0.0/SuperPassLauncherSetup.exe",
+    "setupSha256": "e15735816bae71613d4ace8f39fd1a648d280f7b22845cd55bd2d74f417a8d20",
+    "setupBytes": 1389568,
+    "tag": "launcher-v1.0.0",
+    "published": "2026-11-08T14:33:00.318Z"
+  },
   "moon": {
     "version": "1.0.11",
     "dll": "https://github.com/solulous/downloads/releases/download/moon-v1.0.11/MoonSweepersSuperMod.dll",
