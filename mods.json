@@ -21,6 +21,15 @@
     "title": "One Million Coins Super Mod",
     "tag": "coins-v1.0.18"
   },
+  "dttw": {
+    "version": "1.0.0",
+    "title": "Don't Touch The Water",
+    "setup": "https://github.com/solulous/downloads/releases/download/dttw-v1.0.0/DontTouchTheWaterSetup.exe",
+    "setupSha256": "b1c747d74673cce060dbf93188a5d4387e392198dc9c507b76b7a12c9a6cac79",
+    "setupBytes": 41223680,
+    "published": "2026-11-08T05:21:35Z",
+    "tag": "dttw-v1.0.0"
+  },
   "haystack": {
     "version": "2.2.5",
     "dll": "https://github.com/solulous/downloads/releases/download/haystack-v2.2.5/HaystackSuperMod.dll",
