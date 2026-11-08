@@ -1,0 +1,35 @@
+name: Launcher files
+
+# Run by hand (Actions -> Launcher files -> Run workflow) once, when the SuperPass Launcher goes live: it gives each
+# mod's CURRENT release its "<Mod>-files.zip" (the mod's files, taken out of its setup) and records it in mods.json.
+# New releases get theirs from release.yml by themselves. Safe to run again: anything already there is left as it is.
+# (From game-kit deploy/downloads - change it there.)
+on:
+  workflow_dispatch:
+    inputs:
+      mods:
+        description: 'Only these mods (space-separated, e.g. "clustertruck moon"); empty = all'
+        type: string
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  files:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          path: main
+      - name: Add the launcher files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MODS: ${{ inputs.mods }}
+        run: node main/.github/launcher-files.js main $MODS

@@ -18,8 +18,10 @@ const path = require('path');
 const REPO = process.env.GITHUB_REPOSITORY || 'solulous/downloads';
 // interop = an IL2CPP mod's ready-made interop as a zip (Moon Sweepers): after a game update the mod downloads the
 // release made for its game build ("gameBuild") with it, so players never need the setup again.
+// files = the mod's files as one zip (BepInEx, its loader, the mod): what the SuperPass Launcher installs.
 const FILES = [['dll', 'sha256', null], ['setup', 'setupSha256', 'setupBytes'], ['exe', 'exeSha256', 'exeBytes'],
-  ['interop', 'interopSha256', 'interopBytes']];
+  ['interop', 'interopSha256', 'interopBytes'], ['files', 'filesSha256', 'filesBytes']];
+const { launcherFiles } = require('./payload');
 
 function fail(message) {
   console.log(`::error title=Release FAILED::${message}`);
@@ -72,6 +74,27 @@ function buildEntry(tag, dir) {
   return { name, version, entry, assets };
 }
 
+// A mod release without its own "files": the launcher's zip, made from the setup (in <outDir>, added to the assets).
+// If that can't be done the release still goes out (players keep the setup); the launcher then offers the setup.
+function addLauncherFiles(tag, built, dir, outDir) {
+  const { entry, assets } = built;
+  if (!entry.dll || !entry.setup || entry.files) return;
+  const setupFile = path.basename(entry.setup);
+  try {
+    const made = launcherFiles(setupFile, fs.readFileSync(path.join(dir, setupFile)), entry.dll, entry.sha256);
+    fs.mkdirSync(outDir, { recursive: true });
+    const full = path.join(outDir, made.name);
+    fs.writeFileSync(full, made.zip);
+    entry.files = `https://github.com/${REPO}/releases/download/${tag}/${made.name}`;
+    entry.filesSha256 = made.sha256;
+    entry.filesBytes = made.bytes;
+    assets.push(full);
+    console.log(`Launcher files: ${made.name} (${made.bytes} bytes) from ${setupFile}`);
+  } catch (e) {
+    console.log(`::warning title=No launcher files::${setupFile}: ${e.message} - released without them (the launcher offers the setup)`);
+  }
+}
+
 function run(cmd, args, opts = {}) {
   return execFileSync(cmd, args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], ...opts });
 }
@@ -79,7 +102,14 @@ function run(cmd, args, opts = {}) {
 function makeRelease(tag, { name, version, entry, assets }) {
   let exists = false;
   try { run('gh', ['release', 'view', tag, '--repo', REPO, '--json', 'tagName']); exists = true; } catch (_e) { /* not there yet */ }
-  if (exists) { console.log(`The release ${tag} is already there.`); return; }
+  if (exists) {
+    // run again (or older than the launcher files): add only files the release doesn't have yet, never replace one
+    const have = JSON.parse(run('gh', ['release', 'view', tag, '--repo', REPO, '--json', 'assets'])).assets.map((a) => a.name);
+    const missing = assets.filter((a) => !have.includes(path.basename(a)));
+    if (missing.length) run('gh', ['release', 'upload', tag, ...missing, '--repo', REPO], { stdio: 'inherit' });
+    console.log(`The release ${tag} is already there${missing.length ? `; added ${missing.map((a) => path.basename(a)).join(', ')}` : ''}.`);
+    return;
+  }
   const title = `${entry.title || name} ${version}`;
   const notes = `${title}. Get it from https://onestreampass.com - this page only holds the files.`;
   run('gh', ['release', 'create', tag, ...assets, '--repo', REPO, '--title', title, '--notes', notes, '--verify-tag'], { stdio: 'inherit' });
@@ -95,7 +125,7 @@ function record(mainDir, { name, version, entry }) {
     const all = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8') || '{}') : {};
     const have = all[name];
     if (have && newer(have.version, version) > 0) { console.log(`mods.json already has the newer ${name} ${have.version} - left as it is.`); return; }
-    if (have && have.version === version && have.tag === entry.tag) { console.log(`mods.json already has ${name} ${version}.`); return; }
+    if (have && have.version === version && have.tag === entry.tag && (have.files || !entry.files)) { console.log(`mods.json already has ${name} ${version}.`); return; }
     all[name] = entry;
     const sorted = Object.fromEntries(Object.keys(all).sort().map((k) => [k, all[k]]));
     fs.writeFileSync(file, `${JSON.stringify(sorted, null, 2)}\n`);
@@ -117,9 +147,10 @@ if (require.main === module) {
   const [tag, dir, mainDir] = process.argv.slice(2);
   if (!tag || !dir || !mainDir) fail('Usage: node .github/release.js <tag> <folder with the files> <checkout of main>');
   const built = buildEntry(tag, dir);
+  addLauncherFiles(tag, built, dir, path.join(require('os').tmpdir(), `launcher-files-${tag}`));
   makeRelease(tag, built);
   record(mainDir, built);
   console.log(`::notice title=Released::${built.name} ${built.version} is on GitHub and in mods.json`);
 }
 
-module.exports = { buildEntry, newer };
+module.exports = { buildEntry, addLauncherFiles, newer };
