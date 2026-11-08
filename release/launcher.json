@@ -1,0 +1,7 @@
+{
+  "version": "1.0.2",
+  "title": "SuperPass Launcher",
+  "setup": "SuperPassLauncherSetup.exe",
+  "setupSha256": "d39e4eef0377ab092cfe7af4fc948f92368816bd3bdd9e1056ee5105bc779c5e",
+  "setupBytes": 1396224
+}
