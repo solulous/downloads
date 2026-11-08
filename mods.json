@@ -8,7 +8,10 @@
     "setupBytes": 923136,
     "published": "2026-11-07T22:00:08Z",
     "title": "Clustertruck Super Mod",
-    "tag": "clustertruck-v1.0.2"
+    "tag": "clustertruck-v1.0.2",
+    "files": "https://github.com/solulous/downloads/releases/download/clustertruck-v1.0.2/ClusterTruckSuperMod-files.zip",
+    "filesSha256": "ae4d3881c00da7279e4ee3bd168b97d2cc6d01269e16481081a9490c4d93fdff",
+    "filesBytes": 862206
   },
   "coins": {
     "version": "1.0.18",
@@ -19,7 +22,10 @@
     "setupBytes": 926208,
     "published": "2026-10-30T00:50:33Z",
     "title": "One Million Coins Super Mod",
-    "tag": "coins-v1.0.18"
+    "tag": "coins-v1.0.18",
+    "files": "https://github.com/solulous/downloads/releases/download/coins-v1.0.18/MillionCoinsSuperMod-files.zip",
+    "filesSha256": "542ef23f8af8367b49f5010fddb1c8417e3932f9dcb224fd4d96cfaa93cff1f2",
+    "filesBytes": 869004
   },
   "dttw": {
     "version": "1.0.2",
@@ -38,7 +44,10 @@
     "setupSha256": "3d754d093663422fd609db637e058518f65be5adcce4c5749fbca4d2baffe26f",
     "setupBytes": 848896,
     "published": "2026-10-19T20:32:42Z",
-    "tag": "haystack-v2.2.5"
+    "tag": "haystack-v2.2.5",
+    "files": "https://github.com/solulous/downloads/releases/download/haystack-v2.2.5/HaystackSuperMod-files.zip",
+    "filesSha256": "0aa4529253d75f7bd1231bbc3384c699db11781e50aafe5c9eb8f8ab0804e2fc",
+    "filesBytes": 791888
   },
   "moon": {
     "version": "1.0.11",
@@ -53,7 +62,10 @@
     "gameBuild": "75b906fa53595d8f87d21b1572ba081eeb3c5ce22f1b38c9f5231c0162f31481",
     "title": "Moon Sweepers Super Mod",
     "published": "2026-11-08T06:41:58Z",
-    "tag": "moon-v1.0.11"
+    "tag": "moon-v1.0.11",
+    "files": "https://github.com/solulous/downloads/releases/download/moon-v1.0.11/MoonSweepersSuperMod-files.zip",
+    "filesSha256": "a443f13c7bdad4df3a3c9baaa93b0d44d1514a78542151419ca4f417de53d9e1",
+    "filesBytes": 47190266
   },
   "sausage": {
     "version": "1.0.3",
@@ -64,7 +76,10 @@
     "setupBytes": 1154560,
     "published": "2026-10-23T02:45:57Z",
     "title": "Sausage Super Mod",
-    "tag": "sausage-v1.0.3"
+    "tag": "sausage-v1.0.3",
+    "files": "https://github.com/solulous/downloads/releases/download/sausage-v1.0.3/SausageSuperMod-files.zip",
+    "filesSha256": "68d5db3a8e53103d2ffab0fe914ed3214ee3c1509ef21870b3a0149d20380101",
+    "filesBytes": 1095121
   },
   "supertok": {
     "version": "1.2.9",
