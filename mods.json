@@ -28,13 +28,13 @@
     "filesBytes": 869004
   },
   "dttw": {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "title": "Don't Touch The Water",
-    "setup": "https://github.com/solulous/downloads/releases/download/dttw-v1.0.2/DontTouchTheWaterSetup.exe",
-    "setupSha256": "da37f2b641cb4407eb1b6b28d85f5fe66c7fdc503d664ee7439fa3c2bd747b23",
-    "setupBytes": 39990784,
-    "published": "2026-11-08T06:16:39Z",
-    "tag": "dttw-v1.0.2"
+    "setup": "https://github.com/solulous/downloads/releases/download/dttw-v1.0.3/DontTouchTheWaterSetup.exe",
+    "setupSha256": "60bd9586e3350fa1951bd84a65d86a81b25147e3ab349d770ae5880c513ab8ed",
+    "setupBytes": 40007680,
+    "published": "2026-11-08T16:22:39Z",
+    "tag": "dttw-v1.0.3"
   },
   "haystack": {
     "version": "2.2.5",
