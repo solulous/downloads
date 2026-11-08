@@ -22,13 +22,13 @@
     "tag": "coins-v1.0.18"
   },
   "dttw": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "Don't Touch The Water",
-    "setup": "https://github.com/solulous/downloads/releases/download/dttw-v1.0.0/DontTouchTheWaterSetup.exe",
-    "setupSha256": "b1c747d74673cce060dbf93188a5d4387e392198dc9c507b76b7a12c9a6cac79",
-    "setupBytes": 41223680,
-    "published": "2026-11-08T05:21:35Z",
-    "tag": "dttw-v1.0.0"
+    "setup": "https://github.com/solulous/downloads/releases/download/dttw-v1.0.1/DontTouchTheWaterSetup.exe",
+    "setupSha256": "d62a69c8047b5349583bb9a59f2335ad35e16bf704e65a65487b83309e0fe084",
+    "setupBytes": 41226752,
+    "published": "2026-11-08T05:55:13Z",
+    "tag": "dttw-v1.0.1"
   },
   "haystack": {
     "version": "2.2.5",
