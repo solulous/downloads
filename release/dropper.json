@@ -1,0 +1,8 @@
+{
+    "version":  "1.0.0",
+    "title":  "Super Dropper",
+    "setup":  "SuperDropperSetup.exe",
+    "setupSha256":  "a837643d361cbb976fcc76db296b01df7ef1f62b19aebc18f544488ff097a8c9",
+    "setupBytes":  39976960,
+    "published":  "2026-11-11T23:35:59Z"
+}
