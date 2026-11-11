@@ -27,6 +27,15 @@
     "filesSha256": "542ef23f8af8367b49f5010fddb1c8417e3932f9dcb224fd4d96cfaa93cff1f2",
     "filesBytes": 869004
   },
+  "dropper": {
+    "version": "1.0.0",
+    "title": "Super Dropper",
+    "setup": "https://github.com/solulous/downloads/releases/download/dropper-v1.0.0/SuperDropperSetup.exe",
+    "setupSha256": "a837643d361cbb976fcc76db296b01df7ef1f62b19aebc18f544488ff097a8c9",
+    "setupBytes": 39976960,
+    "published": "2026-11-11T23:35:59Z",
+    "tag": "dropper-v1.0.0"
+  },
   "dttw": {
     "version": "1.0.8",
     "title": "Don't Touch The Water",
