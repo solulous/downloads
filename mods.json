@@ -37,13 +37,13 @@
     "tag": "dropper-v1.0.3"
   },
   "dttw": {
-    "version": "1.0.8",
+    "version": "1.0.9",
     "title": "Don't Touch The Water",
-    "setup": "https://github.com/solulous/downloads/releases/download/dttw-v1.0.8/DontTouchTheWaterSetup.exe",
-    "setupSha256": "b06f1428a56651c761df8546212f6df3d2718e712c38db38ccc695205f86f0cd",
-    "setupBytes": 40060928,
-    "published": "2026-11-08T23:37:21Z",
-    "tag": "dttw-v1.0.8"
+    "setup": "https://github.com/solulous/downloads/releases/download/dttw-v1.0.9/DontTouchTheWaterSetup.exe",
+    "setupSha256": "71eacad23af1c6eb7c2ef34b2c98891ecca44e9db87fd8d0e4ac19d439d3a9e7",
+    "setupBytes": 40065536,
+    "published": "2026-11-12T12:58:05Z",
+    "tag": "dttw-v1.0.9"
   },
   "haystack": {
     "version": "2.2.5",
