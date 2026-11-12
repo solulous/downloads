@@ -28,13 +28,13 @@
     "filesBytes": 869004
   },
   "dropper": {
-    "version": "1.0.3",
+    "version": "1.0.4",
     "title": "Super Dropper",
-    "setup": "https://github.com/solulous/downloads/releases/download/dropper-v1.0.3/SuperDropperSetup.exe",
-    "setupSha256": "61bb894f1116a13213d7170756e9fc4068a8c9775820a5ac778ff12193101761",
-    "setupBytes": 39994880,
-    "published": "2026-11-12T12:32:04Z",
-    "tag": "dropper-v1.0.3"
+    "setup": "https://github.com/solulous/downloads/releases/download/dropper-v1.0.4/SuperDropperSetup.exe",
+    "setupSha256": "6351a5bc6fccd0fe677560ff8e287b21b4e0755bd7512e8b8dd3ff234542ed1f",
+    "setupBytes": 39996928,
+    "published": "2026-11-12T12:59:41Z",
+    "tag": "dropper-v1.0.4"
   },
   "dttw": {
     "version": "1.0.9",
