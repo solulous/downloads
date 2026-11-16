@@ -85,6 +85,24 @@
     "filesSha256": "321370cbc4455faf0ae5c507747d6a9315d645dc1acb7ff9376b92b4b2117ffe",
     "filesBytes": 47190345
   },
+  "playrooms": {
+    "version": "1.0.0",
+    "dll": "https://github.com/solulous/downloads/releases/download/playrooms-v1.0.0/PlayroomsSuperMod.dll",
+    "sha256": "b3366fa29205a5b48a69a4bd909a233dfc0032ea508bb38ac5acf6d28b6bd548",
+    "setup": "https://github.com/solulous/downloads/releases/download/playrooms-v1.0.0/PlayroomsSuperModSetup.exe",
+    "setupSha256": "1837386d94fc537b9c88bb6128103f0ec888cbb356790b8f139291a72a26bb7c",
+    "setupBytes": 56145920,
+    "interop": "https://github.com/solulous/downloads/releases/download/playrooms-v1.0.0/PlayroomsSuperMod-interop.zip",
+    "interopSha256": "ac17ec79031461dfa88893c9f9890c494b0cd144c8f9a04f5dc04896817345c7",
+    "interopBytes": 21382677,
+    "gameBuild": "624c040a4f1e407158b6dee841687e7718ceddbb10cabfde34cf5ca53d498b6c",
+    "title": "Playrooms Super Mod",
+    "published": "2026-11-16T17:53:31Z",
+    "tag": "playrooms-v1.0.0",
+    "files": "https://github.com/solulous/downloads/releases/download/playrooms-v1.0.0/PlayroomsSuperMod-files.zip",
+    "filesSha256": "b0c0c5d519e7eae03de73aa4db5e4d33db1710a8476f501cdc9f52ea0b2c2305",
+    "filesBytes": 56071789
+  },
   "sausage": {
     "version": "1.0.3",
     "dll": "https://github.com/solulous/downloads/releases/download/sausage-v1.0.3/SausageSuperMod.dll",
