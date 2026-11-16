@@ -1,0 +1,14 @@
+{
+  "version": "1.0.13",
+  "dll": "/downloads/MoonSweepersSuperMod.dll",
+  "sha256": "ab356d4c6b3395da5cb6e8b53920b032db14da56db09e029ae5fb269f03c10a1",
+  "setup": "/downloads/MoonSweepersSuperModSetup.exe",
+  "setupSha256": "21374ba495ce27c05035a2685f644e36c2184c168c2043972f1bdc82f6891f34",
+  "setupBytes": 47580160,
+  "interop": "MoonSweepersSuperMod-interop.zip",
+  "interopSha256": "b6a9c6f24f9e6dd3b46222a7e28a498ad780a5c1d63789601f2afd6642a1df47",
+  "interopBytes": 12840460,
+  "gameBuild": "1f22a3d96adbb292b542271c5a93b377afe500b4e9f1e239acc142fd41cd94d1",
+  "title": "Moon Sweepers Super Mod",
+  "published": "2026-11-16T21:26:10Z"
+}
