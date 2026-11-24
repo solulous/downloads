@@ -14,18 +14,18 @@
     "filesBytes": 862206
   },
   "coins": {
-    "version": "1.0.18",
-    "dll": "https://github.com/solulous/downloads/releases/download/coins-v1.0.18/MillionCoinsSuperMod.dll",
-    "sha256": "c9892af8ef993b780c61dd86a38b825c2b7d7de8e566c6a936e92cbc75e8b062",
-    "setup": "https://github.com/solulous/downloads/releases/download/coins-v1.0.18/MillionCoinsSuperModSetup.exe",
-    "setupSha256": "70570ec9cf1d5e90678bb5e9fe385b34d538eb300b7f936f8c24b7c7dfe113fb",
-    "setupBytes": 926208,
-    "published": "2026-10-30T00:50:33Z",
+    "version": "1.0.19",
+    "dll": "https://github.com/solulous/downloads/releases/download/coins-v1.0.19/MillionCoinsSuperMod.dll",
+    "sha256": "ee7bc029ece198560e66546022e32a5625ab58c793d394cb78c6d2a99bc3cafa",
+    "setup": "https://github.com/solulous/downloads/releases/download/coins-v1.0.19/MillionCoinsSuperModSetup.exe",
+    "setupSha256": "7b725720310d990cda2ccc4a9b89464a92d2332a48551ad34a7f020a7cd186c3",
+    "setupBytes": 1010176,
+    "published": "2026-11-24T19:40:17Z",
     "title": "One Million Coins Super Mod",
-    "tag": "coins-v1.0.18",
-    "files": "https://github.com/solulous/downloads/releases/download/coins-v1.0.18/MillionCoinsSuperMod-files.zip",
-    "filesSha256": "542ef23f8af8367b49f5010fddb1c8417e3932f9dcb224fd4d96cfaa93cff1f2",
-    "filesBytes": 869004
+    "tag": "coins-v1.0.19",
+    "files": "https://github.com/solulous/downloads/releases/download/coins-v1.0.19/MillionCoinsSuperMod-files.zip",
+    "filesSha256": "764a29dde2f0a66b2adac3ebdaea5e21eca7b1be3a56ebc45bed1b10a1deb8a8",
+    "filesBytes": 952994
   },
   "dropper": {
     "version": "1.0.5",
