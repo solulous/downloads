@@ -1,0 +1,10 @@
+{
+  "version": "1.0.4",
+  "dll": "ClusterTruckSuperMod.dll",
+  "sha256": "beb9a5a4f62a6cba9760da6f57e3c64282e6eeedb27749fd78661c18e6f0db08",
+  "setup": "ClusterTruckSuperModSetup.exe",
+  "setupSha256": "1626dc0569cb1dfe676ed98d6dad22fd762f06c9e964db2bda6a39f6df90ad8b",
+  "setupBytes": 997888,
+  "published": "2026-11-24T19:55:18Z",
+  "title": "Clustertruck Super Mod"
+}
