@@ -1,17 +1,17 @@
 {
   "clustertruck": {
-    "version": "1.0.3",
-    "dll": "https://github.com/solulous/downloads/releases/download/clustertruck-v1.0.3/ClusterTruckSuperMod.dll",
-    "sha256": "af002c343070ef6d26b0a4d66f04b79279aa7fae81e5113ff7ba9b519c92918d",
-    "setup": "https://github.com/solulous/downloads/releases/download/clustertruck-v1.0.3/ClusterTruckSuperModSetup.exe",
-    "setupSha256": "d316917ae0bf58c3e28bd0e648d0bc6e8021ab27495024797b31e4a184fa398a",
-    "setupBytes": 923136,
-    "published": "2026-11-08T20:48:57Z",
+    "version": "1.0.4",
+    "dll": "https://github.com/solulous/downloads/releases/download/clustertruck-v1.0.4/ClusterTruckSuperMod.dll",
+    "sha256": "beb9a5a4f62a6cba9760da6f57e3c64282e6eeedb27749fd78661c18e6f0db08",
+    "setup": "https://github.com/solulous/downloads/releases/download/clustertruck-v1.0.4/ClusterTruckSuperModSetup.exe",
+    "setupSha256": "1626dc0569cb1dfe676ed98d6dad22fd762f06c9e964db2bda6a39f6df90ad8b",
+    "setupBytes": 997888,
+    "published": "2026-11-24T19:55:18Z",
     "title": "Clustertruck Super Mod",
-    "tag": "clustertruck-v1.0.3",
-    "files": "https://github.com/solulous/downloads/releases/download/clustertruck-v1.0.3/ClusterTruckSuperMod-files.zip",
-    "filesSha256": "5a27a0afd4ab1d7a1e254a7ed7bf828ed71930eb896577cc961237e8b21da101",
-    "filesBytes": 862206
+    "tag": "clustertruck-v1.0.4",
+    "files": "https://github.com/solulous/downloads/releases/download/clustertruck-v1.0.4/ClusterTruckSuperMod-files.zip",
+    "filesSha256": "ffd7e295cf5665b8a55cfb266fc30345650af4062f266b0cd5f389c3831de4e5",
+    "filesBytes": 937322
   },
   "coins": {
     "version": "1.0.19",
