@@ -118,13 +118,13 @@
     "filesBytes": 1095121
   },
   "strimmer": {
-    "version": "1.0.6",
+    "version": "1.0.7",
     "title": "Super Strimmer",
-    "setup": "https://github.com/solulous/downloads/releases/download/strimmer-v1.0.6/SuperStrimmerSetup.exe",
-    "setupSha256": "c3aafd9f433ce51ba799b1f2a3904eadaff5fc84fff5f42456a682beae44479a",
-    "setupBytes": 40909824,
-    "published": "2026-11-24T21:12:55Z",
-    "tag": "strimmer-v1.0.6"
+    "setup": "https://github.com/solulous/downloads/releases/download/strimmer-v1.0.7/SuperStrimmerSetup.exe",
+    "setupSha256": "2a94147c128a37573b86e053429684b5ca45d95ceb13fc599170f5dc104c847c",
+    "setupBytes": 40909312,
+    "published": "2026-11-25T03:31:53Z",
+    "tag": "strimmer-v1.0.7"
   },
   "supertok": {
     "version": "1.2.9",
