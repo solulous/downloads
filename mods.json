@@ -118,13 +118,13 @@
     "filesBytes": 1095121
   },
   "snow": {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "title": "Super Snow",
-    "setup": "https://github.com/solulous/downloads/releases/download/snow-v1.0.1/SuperSnowSetup.exe",
-    "setupSha256": "212ab1c765f0588386c688368182087d9063ed79f5f0cb1556154c82b7cc9710",
-    "setupBytes": 41036288,
-    "published": "2026-11-25T18:30:03Z",
-    "tag": "snow-v1.0.1"
+    "setup": "https://github.com/solulous/downloads/releases/download/snow-v1.0.2/SuperSnowSetup.exe",
+    "setupSha256": "ad08e17cc03f1ce9e6c7ae01defefe54d68cf04dd48f01f29578ada174481085",
+    "setupBytes": 41037312,
+    "published": "2026-11-25T20:15:29Z",
+    "tag": "snow-v1.0.2"
   },
   "strimmer": {
     "version": "1.0.8",
