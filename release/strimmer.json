@@ -1,0 +1,8 @@
+{
+    "version":  "1.0.9",
+    "title":  "Super Strimmer",
+    "setup":  "SuperStrimmerSetup.exe",
+    "setupSha256":  "2d6ac9b0236972cfe2909b52a5262a14f46f95a7b4718ef7befdbc15664241c7",
+    "setupBytes":  40911872,
+    "published":  "2026-11-25T21:28:54Z"
+}
