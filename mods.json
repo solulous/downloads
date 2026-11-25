@@ -127,13 +127,13 @@
     "tag": "snow-v1.0.0"
   },
   "strimmer": {
-    "version": "1.0.7",
+    "version": "1.0.8",
     "title": "Super Strimmer",
-    "setup": "https://github.com/solulous/downloads/releases/download/strimmer-v1.0.7/SuperStrimmerSetup.exe",
-    "setupSha256": "2a94147c128a37573b86e053429684b5ca45d95ceb13fc599170f5dc104c847c",
-    "setupBytes": 40909312,
-    "published": "2026-11-25T03:31:53Z",
-    "tag": "strimmer-v1.0.7"
+    "setup": "https://github.com/solulous/downloads/releases/download/strimmer-v1.0.8/SuperStrimmerSetup.exe",
+    "setupSha256": "916c757c1673b0776b8464ef16802f1bb1bfbbed989fe9ac8a5411675cd6bef8",
+    "setupBytes": 40910336,
+    "published": "2026-11-25T18:27:13Z",
+    "tag": "strimmer-v1.0.8"
   },
   "supertok": {
     "version": "1.2.9",
