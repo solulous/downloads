@@ -1,0 +1,8 @@
+{
+    "version":  "1.0.2",
+    "title":  "Super Snow",
+    "setup":  "SuperSnowSetup.exe",
+    "setupSha256":  "ad08e17cc03f1ce9e6c7ae01defefe54d68cf04dd48f01f29578ada174481085",
+    "setupBytes":  41037312,
+    "published":  "2026-11-25T20:15:29Z"
+}
