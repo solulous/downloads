@@ -117,6 +117,15 @@
     "filesSha256": "68d5db3a8e53103d2ffab0fe914ed3214ee3c1509ef21870b3a0149d20380101",
     "filesBytes": 1095121
   },
+  "snow": {
+    "version": "1.0.0",
+    "title": "Super Snow",
+    "setup": "https://github.com/solulous/downloads/releases/download/snow-v1.0.0/SuperSnowSetup.exe",
+    "setupSha256": "71710b14e60390b136434e2912d69c89c2a44992180731132f7672dcc81f5165",
+    "setupBytes": 41036800,
+    "published": "2026-11-25T14:59:52Z",
+    "tag": "snow-v1.0.0"
+  },
   "strimmer": {
     "version": "1.0.7",
     "title": "Super Strimmer",
