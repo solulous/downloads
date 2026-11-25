@@ -1,0 +1,14 @@
+{
+  "version": "1.0.11",
+  "dll": "/downloads/PlayroomsSuperMod.dll",
+  "sha256": "25ea0b44929e1e892f26031f4cc6ee9e9a1ac6e7d0a06dcd140e5c6d47dcfc55",
+  "setup": "/downloads/PlayroomsSuperModSetup.exe",
+  "setupSha256": "b47d80a2c3b6ba9dddc9d48c54d999d60e8fe4c3f86d81ee53c2e653d4dd2931",
+  "setupBytes": 56267776,
+  "interop": "PlayroomsSuperMod-interop.zip",
+  "interopSha256": "6b8d06a29bd4c3bac586d5f7738f48bd87404fcdecff77efa3d4a29deedc01f5",
+  "interopBytes": 21403852,
+  "gameBuild": "e5d758b373e7192cebb16970871e7c38786e51a6b3a455fd763fd15508304b52",
+  "title": "Playrooms Super Mod",
+  "published": "2026-11-25T18:29:48Z"
+}
