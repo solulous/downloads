@@ -103,6 +103,15 @@
     "filesSha256": "037d7d85d388092a55fdbceea19e9f71858555aad460079d9241f94e505a8a63",
     "filesBytes": 56193821
   },
+  "pool": {
+    "version": "1.0.0",
+    "title": "Drain That Pool",
+    "setup": "https://github.com/solulous/downloads/releases/download/pool-v1.0.0/DrainThatPoolSetup.exe",
+    "setupSha256": "74137a8a0cc51e0bb781eaad45796e48050e623c4408d2a743cf74263af2cbf6",
+    "setupBytes": 40946176,
+    "published": "2026-11-26T03:17:50Z",
+    "tag": "pool-v1.0.0"
+  },
   "sausage": {
     "version": "1.0.3",
     "dll": "https://github.com/solulous/downloads/releases/download/sausage-v1.0.3/SausageSuperMod.dll",
