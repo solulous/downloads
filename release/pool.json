@@ -1,0 +1,8 @@
+{
+    "version":  "1.0.0",
+    "title":  "Drain That Pool",
+    "setup":  "DrainThatPoolSetup.exe",
+    "setupSha256":  "74137a8a0cc51e0bb781eaad45796e48050e623c4408d2a743cf74263af2cbf6",
+    "setupBytes":  40946176,
+    "published":  "2026-11-26T03:17:50Z"
+}
